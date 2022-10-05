@@ -1,0 +1,113 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(to left, #fff, rgb(103, 174, 177));
+    width: 120vh;
+}
+
+.conteyner {
+    width: 400px;
+    height: 550px;
+    border: 1px solid rgba(104, 77, 2, 0.253);
+    border-radius: 20px 20px 20px 20px;
+    background: rgb(244, 245, 209);
+    text-align: center;
+    margin: 30px auto;
+}
+
+.calc__header {
+    height: 50px;
+    width: 100%;
+    background: darkgoldenrod;
+    border-radius: 20px 20px;
+    padding: 5px 0;
+    color: #fff;
+}
+
+form p,
+    .totalTip {
+    margin: 20px 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+    color: dimgray;
+}
+
+form input{
+    width: 240px;
+    height: 40px;
+    border: none;
+    padding: 0 15px;
+    font-size: 18px;
+    outline: none;
+    transition: 0.2s;
+}
+
+form input:focus {
+    border: 2px solid rgba(131, 151, 240, 0.61);
+}
+
+select {
+    width: 240px;
+    height: 50px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    text-align: center;
+    color: rgb(59, 59, 59);
+}
+
+button{
+    width: 180px;
+    height: 40px;
+    margin-top: 25px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    background-color: rgb(109, 109, 109);
+    border: none;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+
+button::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    background: rgb(82, 143, 67);
+    z-index: -1;
+    transition: 0.3s;
+}
+
+button:hover::before {
+    right: 0;
+}
+
+.totalTip{
+    width: 180px;
+    height: 60px;
+    margin: 20px auto;
+    background: rgba(224, 245, 250, 0.541);
+    
+}
+
+.totalTip::before{
+    content: 'Çayevoy';
+    display: block;
+    text-transform: uppercase;
+    color: rgb(53, 53, 53);
+}
+
+
+
